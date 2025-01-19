@@ -23,7 +23,9 @@ spec:
         volumeMounts:
             - name: {{ .Release.Name }}-{{ .Chart.Name }}-mongo
               mountPath: /data/db
-        env: 
+        env:
+          -
+            -
          - name: MONGO_INITDB_DATABASE
            valueFrom:
             configMapKeyRef:
