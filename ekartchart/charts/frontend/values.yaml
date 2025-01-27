@@ -1,7 +1,7 @@
 image:
   client:
     repository: aravindepic/client_emart
-    tag: latest
+    tag: v1
 service:
   client:
     port: 4200
