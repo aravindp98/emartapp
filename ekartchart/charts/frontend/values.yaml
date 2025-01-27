@@ -1,0 +1,12 @@
+image:
+  client:
+    repository: aravindepic/client_emart
+    tag: latest
+service:
+  client:
+    port: 4200
+    type: ClusterIP
+ingress:
+  host: kubekart.k8sengineers.com
+  path:
+    client: /

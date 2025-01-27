@@ -1,0 +1,19 @@
+image:
+  books:
+    repository: aravindepic/japi_emart
+    tag: v1
+  main:
+    repository: aravindepic/nodeapi_emart
+    tag: v1
+service:
+  books:
+    port: 9000
+    type: ClusterIP
+  main:
+    port: 5000
+    type: ClusterIP
+ingress:
+  host: kubekart.k8sengineers.com
+  path:
+    main: /api
+    books: /webapi
