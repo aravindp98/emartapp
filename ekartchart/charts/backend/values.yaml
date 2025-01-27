@@ -1,6 +1,6 @@
 image:
   books:
-    repository: aravindepic/japi_emart
+    repository: aravindepic/japi_mart
     tag: v1
   main:
     repository: aravindepic/nodeapi_emart
