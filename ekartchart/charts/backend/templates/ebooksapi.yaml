@@ -26,5 +26,3 @@ spec:
               value: 'mongodb://emongo:27017/epoc'
             - name: SECRETORKEY
               value: 'k1234e6s78h9av'
-      imagePullSecrets:
-        - name: regcred

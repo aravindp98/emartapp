@@ -22,6 +22,5 @@ spec:
           ports:
           - name: enodeapi-port
             containerPort: 5000
-      imagePullSecrets:
-      - name: regcred
+
       
