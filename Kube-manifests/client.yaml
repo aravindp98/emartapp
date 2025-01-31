@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: client-ui
+  labels:
+    app: client-ui
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: client-ui
+  template:
+    metadata:
+      name: client-ui
+      labels:
+        app: client-ui
+    spec:
+      containers:
+        - name: client-ui
+          image: aravindepic/client_emart:v1
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: client-port
+              containerPort: 8080
+      restartPolicy: Always
+      
